@@ -1,10 +1,41 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset='UTF-8'>
+    <title>{% block title %}{% endblock title %}</title>
+
+{#    bootstrap#}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-7VU/3KUc7XzdyG6fN7Yde8N6sF/bxwhe/SOkZUBiE4IRIXlxdld9XuTmDhoyKvS8Wm3VxJiD2w7VgZ//6U8Oug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+{#    custom css#}
+    <link href='{% static 'css/article_list.css' %}' rel='stylesheet'>
 </head>
 <body>
+    <header class="article-header">
+            <div class="blog-title">
+                <h1>My Blog</h1>
+            </div>
+        </header>
 
+        <nav class="bg-light py-3">
+            <div class="container">
+                <ul class="navigation">
+                    <li class="list-inline-item"><a href="{% url "home_page" %}">Home</a></li>
+                    <li class="list-inline-item"><a href="#">About</a></li>
+                    <li class="list-inline-item"><a href="#">Contact</a></li>
+                    <li class="list-inline-item"><a href="{% url "article_page" %}">Articles</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    {% block content %}{% endblock content %}
+
+    <footer class="footer-copyright">
+        <div class="container">
+            <p class="text-copyright">&copy; 2023 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
