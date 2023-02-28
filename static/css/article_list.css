@@ -7,8 +7,8 @@ body  {
 }
 
 /* header styles */
-header {
-    background-color: #333;
+.blog-header {
+    background-color: #783937;
     color: #fff;
     padding: 20px;
 }
@@ -19,7 +19,7 @@ header h1 {
 
 /* navigation styles */
 nav {
-    background-color: #ccc;
+    background-color: #fc756a;
     padding: 10px;
 }
 
@@ -39,7 +39,7 @@ nav li:last-child {
 }
 
 nav a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -54,8 +54,8 @@ article {
     margin-bottom: 20px;
 }
 
-article header {
-    background-color: #333;
+.article-header {
+    /*background-color: #efac87;*/
     padding: 10px;
     border-radius: 10px;
     font-size: 1.3em;
@@ -71,10 +71,17 @@ article header p {
     margin: 0;
 }
 
-article footer {
-    background-color: #eee;
+.article-tags {
+    background-color: #efac87;
     padding: 10px;
     border-radius: 10px;
+    font-family: "Segoe UI";
+    color: #000000;
+}
+
+.article-tags a {
+    text-decoration: none;
+    color: #fff;
 }
 
 article footer p {
@@ -85,7 +92,7 @@ footer.footer-copyright {
     position: absolute;
     height: 75px;
     width: 100%;
-    background-color: #333333;
+    background-color: #C0C0C0;
     /*bottom: 0;*/
     /*left: 0;*/
 }
@@ -93,7 +100,7 @@ footer.footer-copyright {
 p.text-copyright {
     position: absolute;
     width: 100%;
-    color: #fff;
+    color: #ffffff;
     line-height: 40px;
     font-size: 1em;
     text-align: center;
