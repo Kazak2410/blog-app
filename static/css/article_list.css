@@ -1,16 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 /* body styles */
-body  {
-    font-family: "Segoe UI";
+body {
     margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Slab'
+}
+
+html {
+    height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 /* header styles */
 .blog-header {
-    background-color: #783937;
+    background-color: #2bad65;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
+    font-family: 'Roboto Slab';
 }
 
 header h1 {
@@ -19,7 +34,7 @@ header h1 {
 
 /* navigation styles */
 nav {
-    background-color: #fc756a;
+    background-color: #f7f7f9;
     padding: 10px;
 }
 
@@ -39,15 +54,16 @@ nav li:last-child {
 }
 
 nav a {
-    color: #fff;
+    color: #4e4e4e;
     text-decoration: none;
+    font-family: 'Roboto Slab';
 }
 
 /* main content styles */
 main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 15px;
+    max-width: 900px;
+    margin-left: 5em;
 }
 
 article {
@@ -58,30 +74,29 @@ article {
     /*background-color: #efac87;*/
     padding: 10px;
     border-radius: 10px;
-    font-size: 1.3em;
-    font-family: "Segoe UI";
+    font-family: 'Jost';
 }
 
-article header h2 {
+header h2 {
+    font-size: 2.5em;
     margin: 0;
 }
 
 article header p {
-    font-style: italic;
     margin: 0;
 }
 
 .article-tags {
-    background-color: #efac87;
+    background-color: #f7f7f9;
     padding: 10px;
     border-radius: 10px;
-    font-family: "Segoe UI";
+    font-family: 'Jost';
     color: #000000;
 }
 
 .article-tags a {
     text-decoration: none;
-    color: #fff;
+    color: #4e4e4e;
 }
 
 article footer p {
@@ -89,37 +104,32 @@ article footer p {
 }
 
 footer.footer-copyright {
-    position: absolute;
     height: 75px;
     width: 100%;
     background-color: #C0C0C0;
-    /*bottom: 0;*/
-    /*left: 0;*/
+    /*flex: 0 0 auto;*/
 }
 
 p.text-copyright {
-    position: absolute;
     width: 100%;
     color: #ffffff;
     line-height: 40px;
     font-size: 1em;
     text-align: center;
-    bottom: 0;
 }
 
 .article-body {
-    font-family: "Segoe UI";
-    font-size: 1.2em
+    font-family: 'Noto Sans';
+    font-size: 1.3em
 }
 
 .article-body h1 {
-    font-family: "Segoe UI";
-    font-size: 1.2em
+    font-family: 'Noto Sans';
+    font-size: 1.3em
 }
 
-.article-body p {
-    margin-left: 1em;
-    margin-right: 1em;
+.article-body {
+    margin-left: 0.5em;
 }
 
 .article-body h1 {
@@ -133,4 +143,14 @@ p.text-copyright {
 
 .navigation li:hover {
     transform: scale(1.025);
+}
+
+.article-list a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1em;
+}
+
+.article-date p {
+    font-size: 1em;
 }

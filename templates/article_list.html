@@ -13,11 +13,9 @@
         <div class="article-body">
             <p>{{ article.body | safe }}</p>
         </div>
-{#        {% for category in article.category.objects %}#}
             <footer class="article-tags">
-                <p class="text-muted mb-0">Categories: <a href="#">{{ category }}</a>
+                <p class="text-muted mb-0">Category: <a href="#">{{ article.category }}</a>
             </footer>
-{#        {% endfor %}#}
     </article>
 {% endfor %}
 </main>
