@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ object.title }}{% endblock %}
+
+{% block content %}
+<main class="container py-3">
+    <article class="mb-3">
+        <header class="article-header">
+            <h2 class="article-title">{{ object.title }}</h2>
+            <p class="article-date">Posted on {{ object.date }}</p>
+            <img src="{{ article.img.url }}" alt="{{ article.img.name }}" height="270" width="500">
+        </header>
+        <div class="article-body">
+            <p>{{ object.body | safe }}</p>
+        </div>
+            <footer class="article-tags">
+                <p class="text-muted mb-0">Category: <a href="#">{{ object.category }}</a>
+            </footer>
+    </article>
+</main>
+{% endblock %}

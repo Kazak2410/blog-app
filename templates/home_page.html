@@ -10,7 +10,7 @@
     <div class="article-list">
         {% for article in object_list %}
             <ul>
-                <li><a href="#">{{ article.title }}</a></li>
+                <li><a href="{% url 'article_detail' article.pk %}">{{ article.title }}</a></li>
             </ul>
         {% endfor %}
     </div>

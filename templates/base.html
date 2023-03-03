@@ -11,20 +11,26 @@
 
 {#    custom css#}
     <link href='{% static 'css/article_list.css' %}' rel='stylesheet'>
+
+{#    fontawesome#}
+    <script src="https://kit.fontawesome.com/be57c6a6e2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="blog-header">
             <div class="blog-title">
-                <h1>My Blog</h1>
+                <h1>Блог</h1>
             </div>
         </header>
 
         <nav class="bg-light py-3">
             <div class="container">
                 <ul class="navigation">
-                    <li class="list-inline-item"><a href="{% url "home_page" %}">Home</a></li>
-                    <li class="list-inline-item"><a href="{% url "about_page" %}">About</a></li>
-                    <li class="list-inline-item"><a href="{% url "article_page" %}">Articles</a></li>
+                    <li class="list-inline-item"><a href="{% url "home_page" %}">
+                        <i class="fa-solid fa-house"></i> Главная</a></li>
+                    <li class="list-inline-item"><a href="{% url "about_page" %}">
+                        <i class="fa-solid fa-address-card"></i> Об о мне</a></li>
+                    <li class="list-inline-item"><a href="{% url "article_list" %}">
+                        <i class="fa-solid fa-newspaper"></i> Статьи</a></li>
                 </ul>
             </div>
         </nav>

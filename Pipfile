@@ -8,6 +8,7 @@ django = "~=4.1.0"
 environs = {extras = ["django"], version = "*"}
 whitenoise = "*"
 psycopg2-binary = "*"
+pillow = "*"
 
 [dev-packages]
 
